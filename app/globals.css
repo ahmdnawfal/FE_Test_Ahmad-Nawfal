@@ -1,27 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@import 'aos/dist/aos.css';
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: azure;
+}
+
+.bg-section-1 {
+  background-image: url(/assets/bg-page-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-section-2 {
+  background-image: url(/assets/bg-page-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flower-4 {
+  background-image: url(/assets/flower-4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
